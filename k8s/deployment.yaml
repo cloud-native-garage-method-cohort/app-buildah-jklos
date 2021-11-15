@@ -20,7 +20,7 @@ spec:
       schedulerName: default-scheduler
       containers:
         - name: app-buildah
-          image: quay.io/juliaklos/app-buildah
+          image: quay.io/juliaklos/app-buildah:8ad73ebf2ae85c0209abb8d1feb28fdf05dc818b
           ports:
             - name: http
               protocol: TCP

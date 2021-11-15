@@ -7,4 +7,5 @@ resources:
   - create-configuration.Task.yaml
   - deploy.Task.yaml
   - build.Pipeline.yaml
+  - webhook-trigger.EventListener.yaml
 

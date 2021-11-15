@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: express-sample-app
+  name: app-buildah
 spec:
   replicas: 1
   selector:
@@ -19,7 +19,7 @@ spec:
       dnsPolicy: ClusterFirst
       schedulerName: default-scheduler
       containers:
-      - name: express-sample-app
+      - name: app-buildah
         image: quay.io/juliaklos/app-buildah:8ad73ebf2ae85c0209abb8d1feb28fdf05dc818b
         ports:
         - name: http
